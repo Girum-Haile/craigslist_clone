@@ -35,6 +35,7 @@ def new_search(request):
             post_image_id = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
             post_image_url = BASE_IMAGE_URL.format(post_image_id)
 
+
         else:
             post_image_url = 'https://craigslist.org/images/peace.jpg'
 
